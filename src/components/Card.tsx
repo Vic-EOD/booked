@@ -1,4 +1,5 @@
 import React from "react";
+import './Card.css';
 
 type CardProps = {
     title: string;
@@ -8,7 +9,7 @@ type CardProps = {
 }
 
 export const Card = ( { title, imgUrl, director, description }: CardProps): JSX.Element => 
-    <div>
+    <div className="card">
         <img src={imgUrl}/>
         <h2>{ title }</h2>
         <h3>Directed by { director } </h3>
