@@ -1,19 +1,12 @@
-import React from "react";
 import './Card.css';
+import type { Work } from '../types/Work';
 
-type CardProps = {
-    title: string;
-    imgUrl: string;
-    director: string;
-    description: string;
-}
-
-export const Card = ( { title, imgUrl, director, description }: CardProps): JSX.Element => 
+export const Card = ( work: Work): JSX.Element => 
     <div className="card">
-        <img src={imgUrl}/>
-        <h2>{ title }</h2>
-        <h3>Directed by { director } </h3>
-        <p> { description } </p>
+        <h2>Movie Title: { work.movieTitle }</h2>
+        <h3>Book Title: { work.bookTitle }</h3>
+        <h3>Written by { work.bookAuthor } </h3>
+        <p>Movie released in { work.movieReleaseYear }</p>
     </div>
 ;
 
