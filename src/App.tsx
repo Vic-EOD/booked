@@ -1,23 +1,24 @@
-import React from 'react';
 import './App.css';
-import { Card } from './components/Card';
+import { CardList } from './components/CardList';
 
-const movie = {
-    title: "The Departed",
-    imgUrl: "https://a.ltrbxd.com/resized/sm/upload/jr/th/pu/pb/laefkgrfa3oKwvBtWTBtf2suiI4-0-230-0-345-crop.jpg?k=6dfd45925a" ,
-    director: "Martin Scorsese",
-    description: "Very good movie directed by Martin Scorsese starring Leonardo DiCaprio, Matt Damon, Mark Wahlberg, and Jack Nicholson."
-};
+
+//const works: Work[] = [
+//    { id: '1', movieTitle: 'The Prestige', bookTitle: 'The Prestige', bookAuthor: 'Chistopher Priest', movieReleaseYear: 2006 },
+//    { id: '2', movieTitle: 'The Girl with the Dragon Tattoo', bookTitle: 'The Girl with the Dragon Tattoo', bookAuthor: 'Stieg Larsson', movieReleaseYear: 2011 },
+//    { id: '3', movieTitle: 'Arrival', bookTitle: 'Stroy of Your Life', bookAuthor: 'Ted Chiang', movieReleaseYear: 2016 },
+//    { id: '4', movieTitle: 'The Prestige', bookTitle: 'The Prestige', bookAuthor: 'Chistopher Priest', movieReleaseYear: 2006 },
+//    { id: '5', movieTitle: 'The Girl with the Dragon Tattoo', bookTitle: 'The Girl with the Dragon Tattoo', bookAuthor: 'Stieg Larsson', movieReleaseYear: 2011 },
+//    { id: '6', movieTitle: 'Arrival', bookTitle: 'Stroy of Your Life', bookAuthor: 'Ted Chiang', movieReleaseYear: 2016 },
+//    { id: '7', movieTitle: 'The Prestige', bookTitle: 'The Prestige', bookAuthor: 'Chistopher Priest', movieReleaseYear: 2006 },
+//    { id: '8', movieTitle: 'The Girl with the Dragon Tattoo', bookTitle: 'The Girl with the Dragon Tattoo', bookAuthor: 'Stieg Larsson', movieReleaseYear: 2011 },
+//    { id: '9', movieTitle: 'Arrival', bookTitle: 'Stroy of Your Life', bookAuthor: 'Ted Chiang', movieReleaseYear: 2016 }
+//]
+
 
 function App() {
   return (
       <div className="App">
-          <Card
-            title = {movie.title}
-            imgUrl = {movie.imgUrl}
-            director = {movie.director}
-            description = {movie.description}
-          />
+          <CardList />
       </div>
   );
 }
